@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 300vh; /* Chiều cao của viewport */
+}
+
+.block {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
