@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Video 9| Elon musk and TATA</title>
+    <script>
+        // JavaScript để lấy đường dẫn video từ URL và đặt nó cho thẻ source
+        var videoSrc = decodeURIComponent((new URLSearchParams(window.location.search)).get('video'));
+        document.getElementById('videoSrc').src = "./images/"+ videoSrc;
+    </script>
+    <script>
+        // Hàm để chuyển hướng đến trang video và truyền đường dẫn video
+        function goToVideo(videoSrc) {
+            window.location.href = "video-1.html?video=" + encodeURIComponent(videoSrc);
+        }
+        // Danh sách các video và thông tin tương ứng
+        
+    </script>
 </head>
 
 <body>
@@ -35,7 +48,7 @@
         <div class="row">
             <div class="play-video">
                 <video  controls autoplay>
-                    <source src="./images/thumbnail1 video.mp4" type="video/mp4">
+                    <source  src="" type="video/mp4" id="videoSrc">
                 </video>
 
                 <div class="tags">
@@ -153,7 +166,7 @@
             <div class="right-sidebar">
 
                 <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail19.png" alt="" srcset=""></a>
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail19.png" alt="" srcset="" class="small-thumbnail"></a>
                     <div class="vid-info">
                         <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
                         <p>Avalin Vines</p>
@@ -161,92 +174,7 @@
                     </div>
                 </div>
 
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail10.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail11.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-                <div class="side-video-list">
-                    <a href="video-12.html" class="small-thumbnail"> <img src="./images/thumbnail12.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="video-12.html">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail13.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail14.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail15.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail16.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail17.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-                <div class="side-video-list">
-                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail18.png" alt="" srcset=""></a>
-                    <div class="vid-info">
-                        <a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nostrum?</a>
-                        <p>Avalin Vines</p>
-                        <p>1.1M Views</p>
-                    </div>
-                </div>
-
-
+         
 
             </div>
         </div>
@@ -254,7 +182,77 @@
 
 
 
-
+    <script>
+        // JavaScript để lấy đường dẫn video từ URL và đặt nó cho thẻ source
+        var videoSrc = decodeURIComponent((new URLSearchParams(window.location.search)).get('video'));
+        document.getElementById('videoSrc').src = "./images/"+ videoSrc;
+    </script>
+    <script>
+        // Danh sách các video và thông tin tương ứng
+    var videos = [
+    { thumbnail: "./images/thumbnail1.png", title: "Video 1 Title", videoSrc: "thumbnail1 video.mp4", author: "Author 1",author_img:"./images/thumbnail1-owner.jpg", views: "1k Views", date: "1 day" },
+    { thumbnail: "./images/thumbnail2.png", title: "Video 2 Title", videoSrc: "thumbnail2 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+    { thumbnail: "./images/thumbnail3.png", title: "Video 3 Title", videoSrc: "thumbnail3 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+    { thumbnail: "./images/thumbnail9.png", title: "Video 9 Title", videoSrc: "thumbnail9 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+    { thumbnail: "./images/thumbnail12.png", title: "Video 12 Title", videoSrc: "thumbnail12 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+    { thumbnail: "./images/thumbnail12.png", title: "Video 12 Title", videoSrc: "thumbnail12 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+    
+    // Thêm các video khác vào đây...
+    ];
+    
+    // Khối chứa danh sách video
+    var listContainer = document.querySelector('.right-sidebar');
+    
+    // Lặp qua danh sách video và tạo các khối chứa video mới
+    videos.forEach(function(video) {
+    // Tạo khối chứa video mới
+    var videoBlock = document.createElement('div');
+    videoBlock.classList.add('side-video-list');
+    //tạo đường đẫn khi click thumnail
+    var link_thumnail = document.createElement('a');
+    link_thumnail.classList.add("small-thumbnail")
+    link_thumnail.addEventListener('click', function() {
+        goToVideo(video.videoSrc);
+    });
+    // Tạo phần tử thumbnail
+    var thumbnail = document.createElement('img');
+    thumbnail.src = video.thumbnail;
+    // Tạo khối chứa thông tin video
+    
+    // Tạo phần tử hiển thị thông tin video
+    var infoDiv = document.createElement('div');
+    infoDiv.classList.add('vid-info');
+    
+    // Tạo tiêu đề video
+    var titleLink = document.createElement('a');
+    titleLink.textContent = video.title;
+    titleLink.addEventListener('click', function() {
+        goToVideo(video.videoSrc);
+    });
+    
+    // Tạo tên tác giả
+    
+    var author = document.createElement('p');
+    author.textContent = video.author;
+    
+    // Tạo thông tin lượt xem và ngày đăng
+    var viewsDate = document.createElement('p');
+    viewsDate.textContent = video.views + ' • ' + video.date;
+    
+    // Thêm các phần tử vào các khối chứa
+    
+    infoDiv.appendChild(titleLink);
+    infoDiv.appendChild(author);
+    infoDiv.appendChild(viewsDate);
+    link_thumnail.appendChild(thumbnail);
+    videoBlock.appendChild(link_thumnail);
+    videoBlock.appendChild(infoDiv);
+    // Thêm khối video vào khối chứa danh sách video
+    listContainer.appendChild(videoBlock);
+    });
+    
+    </script>
+    
 </body>
 
 </html>

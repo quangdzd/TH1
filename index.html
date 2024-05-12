@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Youtube Clone</title>
+    <script>
+        // Hàm để chuyển hướng đến trang video và truyền đường dẫn video
+        function goToVideo(videoSrc) {
+            window.location.href = "video-1.html?video=" + encodeURIComponent(videoSrc);
+        }
+        // Danh sách các video và thông tin tương ứng
+        
+    </script>
 </head>
 <body>
     
@@ -69,247 +77,16 @@
     </div>
     <div class="list-container">
        <div class="vid-list">
-           <a href="video-1.html"> <img src="./images/thumbnail1.png" class="thumbnail" ></a>
+        <img src="./images/thumbnail1.png" onclick="goToVideo('thumbnail1 video.mp4')" class="thumbnail" ></a>
            <div class="flex-div">
                <img src="./images/nilava.jpeg">
                <div class="vid-info">
-                   <a href="video-1.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
+                   <a onclick="goToVideo('thumbnail1 video.mp4')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
                    <p>Avalin</p>
                    <p>2k Views &bull; 2 days</p>
                </div>
            </div>
        </div>
-     
-       <div class="vid-list">
-        <a href="video-2.html"> <img src="./images/thumbnail2.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="video-2.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Ava</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="video-3.html"> <img src="./images/thumbnail3.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="video-3.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail4.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail5.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail6.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail7.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail8.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-
-        <div class="vid-list">
-        <a href="video-9.html"> <img src="./images/thumbnail9.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="video-9.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>  
-    
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail10.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="video-11.html"> <img src="./images/thumbnail11.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="video-11.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="video-12.html"> <img src="./images/thumbnail12.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="video-12.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail13.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail14.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail15.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail16.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail17.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail18.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail19.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="vid-list">
-        <a href="#"> <img src="./images/thumbnail20.png" class="thumbnail" ></a>
-        <div class="flex-div">
-            <img src="./images/nilava.jpeg">
-            <div class="vid-info">
-                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis?</a>
-                <p>Avalin</p>
-                <p>2k Views &bull; 2 days</p>
-            </div>
-        </div>
-    </div>
-
-
     </div>
 
 
@@ -317,8 +94,78 @@
 </div>
 
 
-<script src="side-bar.js"></script>
+<script src="side-bar.js">
 
+</script>
+<script>
+    // Danh sách các video và thông tin tương ứng
+var videos = [
+{ thumbnail: "./images/thumbnail1.png", title: "Video 1 Title", videoSrc: "thumbnail1 video.mp4", author: "Author 1",author_img:"./images/thumbnail1-owner.jpg", views: "1k Views", date: "1 day" },
+{ thumbnail: "./images/thumbnail2.png", title: "Video 2 Title", videoSrc: "thumbnail2 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+{ thumbnail: "./images/thumbnail3.png", title: "Video 3 Title", videoSrc: "thumbnail3 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+{ thumbnail: "./images/thumbnail9.png", title: "Video 9 Title", videoSrc: "thumbnail9 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+{ thumbnail: "./images/thumbnail12.png", title: "Video 12 Title", videoSrc: "thumbnail12 video.mp4", author: "Author 2",author_img:"./images/thumbnail12-owner.jpg", views: "2k Views", date: "2 days" },
+
+// Thêm các video khác vào đây...
+];
+
+// Khối chứa danh sách video
+var listContainer = document.querySelector('.list-container');
+
+// Lặp qua danh sách video và tạo các khối chứa video mới
+videos.forEach(function(video) {
+// Tạo khối chứa video mới
+var videoBlock = document.createElement('div');
+videoBlock.classList.add('vid-list');
+
+// Tạo phần tử thumbnail
+var thumbnail = document.createElement('img');
+thumbnail.src = video.thumbnail;
+thumbnail.classList.add('thumbnail');
+thumbnail.addEventListener('click', function() {
+    goToVideo(video.videoSrc);
+});
+
+// Tạo khối chứa thông tin video
+var flexDiv = document.createElement('div');
+flexDiv.classList.add('flex-div');
+
+// Tạo phần tử hiển thị thông tin video
+var infoDiv = document.createElement('div');
+infoDiv.classList.add('vid-info');
+
+// Tạo tiêu đề video
+var titleLink = document.createElement('a');
+titleLink.textContent = video.title;
+titleLink.addEventListener('click', function() {
+    goToVideo(video.videoSrc);
+});
+
+// Tạo tên tác giả
+var author_img = document.createElement('img');
+author_img.src = video.author_img
+var author = document.createElement('p');
+author.textContent = video.author;
+
+// Tạo thông tin lượt xem và ngày đăng
+var viewsDate = document.createElement('p');
+viewsDate.textContent = video.views + ' • ' + video.date;
+
+// Thêm các phần tử vào các khối chứa
+
+infoDiv.appendChild(titleLink);
+infoDiv.appendChild(author);
+infoDiv.appendChild(viewsDate);
+flexDiv.appendChild(author_img);
+flexDiv.appendChild(infoDiv);
+videoBlock.appendChild(thumbnail);
+videoBlock.appendChild(flexDiv);
+
+// Thêm khối video vào khối chứa danh sách video
+listContainer.appendChild(videoBlock);
+});
+
+</script>
 
 </body>
 </html>
